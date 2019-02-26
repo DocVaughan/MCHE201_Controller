@@ -13,7 +13,8 @@
 #   - http://www.ucs.louisiana.edu/~jev9637
 #
 # Modified:
-#   * 
+#   * 02/25/19 - JEV
+#       - updated i2c address to match v2 of MCHE201 board
 #
 # TODO:
 #   * 
@@ -24,7 +25,7 @@ import time
 
 
 class PCA9685:
-    def __init__(self, i2c, address=0x40):
+    def __init__(self, i2c, address=0x60):
         self.i2c = i2c
         self.address = address
         self.reset()
